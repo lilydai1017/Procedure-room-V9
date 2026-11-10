@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Chambre des Procédures — Chambre 01 : Accès central</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;500;600&family=Spectral:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/base.css">
+<link rel="stylesheet" href="css/dialogue.css">
+<link rel="stylesheet" href="css/workspace.css">
+</head>
+<body>
+<div id="stage">
+<svg id="world" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" aria-label="Salle de procédure"></svg>
+<div id="vignette"></div>
+<div id="grain"></div>
+<div id="darkness"></div>
+<div id="title"><div class="t1" id="t1"></div><div class="t2" id="t2"></div><div class="t3" id="t3"></div></div>
+<div id="ws" role="region" aria-label="Espace de procédure"></div>
+<div id="holoLayer"></div>
+<div id="bubbleLayer" aria-live="polite"></div>
+<div id="feedback" role="status"></div>
+</div>
+<header id="hud">
+  <div><div id="roomId">La Chambre des Procédures<br><b>Chambre 01 / Accès central</b></div><div id="progress"><i></i></div></div>
+  <div id="hudBtns"><button class="hudBtn" id="sndBtn" aria-pressed="true" title="Son">Son activé</button></div>
+</header>
+
+<!-- Scripts load in this order. Engine first, then the room. To add a room, add its files above js/main.js. -->
+<script src="js/core/utils.js"></script>
+<script src="js/core/i18n.js"></script>
+<script src="js/core/audio.js"></script>
+<script src="js/core/rooms.js"></script>
+<script src="js/core/workspace.js"></script>
+<script src="js/environment/room-scene.js"></script>
+<script src="js/environment/camera.js"></script>
+<script src="js/patient/patient.js"></script>
+<script src="js/patient/monitor.js"></script>
+<script src="js/dialogue/dialogue.js"></script>
+<script src="js/anatomy/anatomy.js"></script>
+<script src="js/ultrasound/ultrasound.js"></script>
+<script src="js/ultrasound/scanning.js"></script>
+<script src="js/equipment/equipment.js"></script>
+<script src="rooms/room01/content.js"></script>
+<script src="rooms/room01/steps/00-opening.js"></script>
+<script src="rooms/room01/steps/01-assessment.js"></script>
+<script src="rooms/room01/steps/02-equipment.js"></script>
+<script src="rooms/room01/steps/03-sterile.js"></script>
+<script src="rooms/room01/steps/04-access.js"></script>
+<script src="rooms/room01/steps/05-seldinger.js"></script>
+<script src="rooms/room01/steps/06-finish.js"></script>
+<script src="rooms/room01/room.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

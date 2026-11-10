@@ -1,0 +1,11 @@
+{
+  "name": "la-chambre-des-procedures",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Interactive medical simulation game. Room 01: ultrasound-guided right internal jugular CVC insertion.",
+  "scripts": {
+    "start": "npx --yes serve -l 5173 .",
+    "check": "node scripts/check.js"
+  },
+  "license": "UNLICENSED"
+}
